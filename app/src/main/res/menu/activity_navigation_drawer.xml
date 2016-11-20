@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Browse...">
+        <menu android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_artist"
+                android:icon="@drawable/icon_artist"
+                android:title="By Artist"/>
+            <item
+                android:id="@+id/nav_calendar"
+                android:icon="@drawable/icon_calendar"
+                android:title="By Date"/>
+            <item
+                android:id="@+id/nav_genre"
+                android:icon="@drawable/icon_genre"
+                android:title="By Genre"/>
+            <item
+                android:id="@+id/nav_venue"
+                android:icon="@drawable/icon_venue"
+                android:title="By Venue"/>
+            <item
+                android:id="@+id/nav_map"
+                android:icon="@drawable/icon_map"
+                android:title="On a Map"/>
+            <item
+                android:id="@+id/nav_settings_bands"
+                android:icon="@drawable/icon_artist_fav"
+                android:title="Fave Artists"/>
+            <item
+                android:id="@+id/nav_settings_venues"
+                android:icon="@drawable/icon_venue_fav"
+                android:title="Fave Venues"/>
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_settings_genre"
+                android:icon="@drawable/icon_settings"
+                android:title="Genres Filters"/>
+        </menu>
+    </item>
+
+</menu>

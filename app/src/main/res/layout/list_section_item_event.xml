@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+              android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/list_event_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.60"
+            android:textAlignment="gravity"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/list_event_venue"
+            android:text="Venue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="gravity"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_weight="0.40"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/list_event_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:textAlignment="gravity"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:text="Time" />
+
+        <TextView
+            android:id="@+id/list_event_address"
+            android:text="Address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:textAlignment="gravity"
+            android:textSize="12dp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+</LinearLayout>
