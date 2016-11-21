@@ -62,28 +62,6 @@ import au.com.suncoastpc.coastlive.utils.DatabaseHelper;
 import au.com.suncoastpc.coastlive.utils.Environment;
 import au.com.suncoastpc.coastlive.utils.StringUtilities;
 
-//FIXME:  tabs:
-//          Artist                                                                                                                                                                      [X]
-//          Date                                                                                                                                                                        [X]
-//          Venue                                                                                                                                                                       [X]
-//          Genre                                                                                                                                                                       [X]
-//          Map                                                                                                                                                                         [X]
-//              Include ability to overlay SCC data (fuel stations, restaurants, traffic events, etc.; can use aggregation service and just fetch/display extra data on-demand ())      [X]
-//          Settings                                                                                                                                                                    [X]
-//              Genre filter                                                                                                                                                            [X]
-//          Event details screen                                                                                                                                                        [X]
-//              w/ photo?
-//              w/ map?                                                                                                                                                                 [X]
-//              basic event info and description                                                                                                                                        [X]
-//              link to Youtube/JJJ sample audio/artist page                                                                                                                            [X]
-//              link to ticket purchase/event details when available                                                                                                                    [X]
-//              social media share/post (just make a fake 'share' button in the UI)                                                                                                     [X]
-//              data-gateway public comments
-//          Fix/replace all icons                                                                                                                                                       [X]
-//          Local notifications for fave artists/venues (just make some fake ones for the video)
-//          Implement 'About' item (just show alertview with some basic details, button to go to website)                                                                               [X]
-//          add data-gateway handler for SCC events feed; category=10, aggregate into resultset                                                                                         [X]
-//          add download link to data-gateway, add APK, add QR code                                                                                                                     [X]
 public class NavigationActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, ApiResponseDelegate, ListAdapter, AdapterView.OnItemClickListener {
     private static final DateFormat DAY_FORMAT = new SimpleDateFormat("EEEE, dd MMM yyyy");
     private static final DateFormat DAY_FORMAT_SHORT = new SimpleDateFormat("EEEE, dd MMM");
@@ -106,15 +84,6 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
         setContentView(R.layout.activity_navigation);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        //FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        //fab.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View view) {
-        //        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-        //                .setAction("Action", null).show();
-        //    }
-        //});
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
