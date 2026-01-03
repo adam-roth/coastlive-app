@@ -35,8 +35,8 @@ public class ServerApi {
 	private static final String PRODUCTION_SERVER = "http://terra.suncoastpc.com.au:8181";
 	private static final String DEV_SERVER = "http://192.168.1.35:8080";
 
-	private static final String PRODUCTION_API_KEY = "a3579c0b937f483c9b52247544d4bb5a";
-	private static final String DEV_API_KEY = "e4335a64660e40b1826ab61296bb0a26";
+	private static final String PRODUCTION_API_KEY = "YOUR_PROD_KEY";
+	private static final String DEV_API_KEY = "YOUR_DEV_KEY";
 
 	private static final int CONNECT_TIMEOUT = 1000 * 30;			//30 second connect timeout
 	private static final int REQUEST_TIMEOUT = 1000 * 60 * 4;		//4 minutes request timeout
@@ -66,7 +66,7 @@ public class ServerApi {
 		
 		//okay to proceed
 		try {
-			////format=json&apiKey=e4335a64660e40b1826ab61296bb0a26&params=where=1%3D1&f=pjson&context=Society/Society_SCRC/MapServer/17
+			////format=json&apiKey=YOUR_API_KEY&params=where=1%3D1&f=pjson&context=Society/Society_SCRC/MapServer/17
 			String url = getServerAddress() + ApiMethod.LOAD_DATA.getPath();
 			String params = "format=json&apiKey=" + getApiKey()
 					+ "&context=" + StringUtilities.encodeUriComponent(context)
